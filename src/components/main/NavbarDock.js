@@ -9,7 +9,7 @@ export default function NavbarDock() {
    return (
       <>
          <Dock
-            className="sticky sticky-bottom bottom-0"
+            className="sticky sticky-bottom bottom-0 d-flex d-sm-none"
             items={[
                {
                   icon: <FaHome size={18} />,

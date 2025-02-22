@@ -13,7 +13,7 @@ export default function Navbar() {
                   Ahmad<span className="text-secondary fw-bold">Adptr</span>
                </a>
                <div className="d-flex align-items-center justify-content-center">
-                  <span className="text-info">
+                  <span className="text-info d-none d-sm-block">
                      Traktir Mimin Kopi <CiCoffeeCup />
                   </span>
                   <div className="dropdown">

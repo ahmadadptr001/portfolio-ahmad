@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+html,
+body {
+  font-family: system-ui;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body[data-bs-theme="dark"] {
+  --color-dock-label: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body[data-bs-theme="light"] {
+  --color-dock-label: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+ul li {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.support-icon {
+  width: 150px;
   color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  background: rgb(255, 0, 43);
+  align-items: center;
+  justify-content: right;
+  border-radius: 50rem;
+  margin-left: -90%;
+  display: flex;
+  gap: .4rem;
 }
 
-.App-link {
-  color: #61dafb;
+#hero-content {
+  z-index: inherit;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.support-icon:hover {
+  transition: .3s ease-in-out;
+  margin-left: -25%;
+}
+
+
+
+.circular-text span {
+  text-shadow: 0 0 5px red;
+}
+
+@media (max-width: 576px) {
+  #hero-content {
+    grid-template-columns: repeat(1, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+
+  #hero-content-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .circular-text {
+    right: -5px;
+    bottom: -5px;
+  }
+
+  .circular-text {
+    width: 70px !important;
+    height: 70px !important;
+  }
+
+  .circular-text span {
+    font-size: 8px !important;
   }
 }
+
+@media (min-width: 576px) {
+  #hero-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #hero-content-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .circular-text {
+    right: -5px;
+    bottom: -5px;
+  }
+
+  .circular-text span {
+    font-size: 8px;
+
+  }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}

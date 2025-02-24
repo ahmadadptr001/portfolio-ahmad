@@ -6,7 +6,7 @@ import Squares from "../components-animasi/Squares";
 
 export default function Hero() {
    return (
-      <div className="container-fluid position-relative">
+      <div className="container-fluid position-relative py-5">
          <Squares
             speed={0.1}
             squareSize={80}
@@ -64,7 +64,7 @@ export default function Hero() {
                   />
                </div>
             </div>
-            <div className="ps-4 p-ms-1">
+            <div className="ps-4 p-ms-1 z-2">
                <GlitchText
                   speed={1}
                   enableShadows={true}
@@ -73,7 +73,7 @@ export default function Hero() {
                >
                   I AM FULL-STACK
                </GlitchText>
-               <span className="fw-bold">
+               <span className="fw-bold" style={{ fontSize: ".9rem" }}>
                   Hi, saya adalah seorang full-stach sekaligus designer.
                   Silahkan eksplore lebih dalam mengenai saya melalui web
                   portoflio ini!

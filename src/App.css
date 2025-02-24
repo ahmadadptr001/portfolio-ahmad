@@ -39,7 +39,7 @@ a {
 }
 
 #hero-content {
-  z-index: inherit;
+  z-index: 2 !important;
 }
 
 .support-icon:hover {
@@ -52,6 +52,17 @@ a {
 .circular-text span {
   text-shadow: 0 0 5px red;
 }
+
+#pendidikan-information {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#pendidikan-information div:nth-child(1) {
+  grid-row: span 3;
+}
+
+
+/* =======================pengaturan responsive========================================= */
 
 @media (max-width: 576px) {
   #hero-content {

@@ -1,5 +1,5 @@
 import { FaHome } from "react-icons/fa";
-import { FaUserCircle } from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa6";
 import { FaTools } from "react-icons/fa";
 import { FaHeadphones } from "react-icons/fa";
 
@@ -17,8 +17,8 @@ export default function NavbarDock() {
                   onClick: () => alert("Home!"),
                },
                {
-                  icon: <FaUserCircle size={18} />,
-                  label: "Tentang",
+                  icon: <FaGraduationCap size={18} />,
+                  label: "Pendidikan",
                   onClick: () => alert("Archive!"),
                },
                {

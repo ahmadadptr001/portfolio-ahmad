@@ -1,4 +1,5 @@
 import { CiCoffeeCup } from "react-icons/ci";
+import { TbMenuDeep } from "react-icons/tb";
 
 export default function Navbar() {
    return (
@@ -11,16 +12,19 @@ export default function Navbar() {
                >
                   Ahmad<span className="text-secondary fw-bold">Adptr</span>
                </a>
-               <div className="d-flex align-items-center justify-content-center">
-                  <span className="text-info">
-                     Traktir Mimin Kopi <CiCoffeeCup className="fs-3" />
-                  </span>
+               <div className="d-flex align-items-center justify-content-center fw-bold">
+                  <div>
+                     <span className="text-info">
+                        <CiCoffeeCup />
+                     </span>{" "}
+                     Traktir Mimin Kopi
+                  </div>
                   <button
-                     className="btn fs-5 py-0 d-none d-md-block"
+                     className="btn py-0 d-none d-md-block ms-2 text-light"
                      data-bs-toggle="offcanvas"
                      data-bs-target="#offcanvas-navbar"
                   >
-                     <span className="navbar-toggler-icon"></span>
+                     <TbMenuDeep className="fs-4" />
                   </button>
                </div>
             </div>

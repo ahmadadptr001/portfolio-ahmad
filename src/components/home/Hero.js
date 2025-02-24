@@ -6,10 +6,7 @@ import Squares from "../components-animasi/Squares";
 
 export default function Hero() {
    return (
-      <div
-         className="container-fluid position-relative"
-         style={{ minHeight: "85vh" }}
-      >
+      <div className="container-fluid position-relative">
          <Squares
             speed={0.1}
             squareSize={80}

@@ -4,7 +4,10 @@ import FuzzyText from "../components-animasi/FuzzyText ";
 export default function Pendidikan() {
    return (
       <>
-         <div className="my-5 py-5 d-flex align-items-center justify-content-center">
+         <div
+            id="pendidikan"
+            className="my-5 py-5 d-flex align-items-center justify-content-center"
+         >
             <FuzzyText
                baseIntensity={0.2}
                hoverIntensity={0.2}

@@ -6,6 +6,11 @@ import { FaHeadphones } from "react-icons/fa";
 import Dock from "../components-animasi/Dock";
 
 export default function NavbarDock() {
+   function scrollToID(idElement) {
+      const el = document.getElementById(idElement);
+      el.scrollIntoView({ behavior: "smooth" });
+   }
+
    return (
       <>
          <Dock
@@ -14,12 +19,12 @@ export default function NavbarDock() {
                {
                   icon: <FaHome size={18} />,
                   label: "Beranda",
-                  onClick: () => alert("Home!"),
+                  onClick: () => scrollToID("hero-content"),
                },
                {
                   icon: <FaGraduationCap size={18} />,
                   label: "Pendidikan",
-                  onClick: () => alert("Archive!"),
+                  onClick: () => scrollToID("pendidikan"),
                },
                {
                   icon: <FaTools size={18} />,

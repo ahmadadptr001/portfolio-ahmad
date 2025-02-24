@@ -28,43 +28,114 @@ export default function Pendidikan() {
                id="pendidikan-information"
                className="d-grid gap-3 bg-transparent"
             >
-               <div className="card border p-2 px-3 rounded">
-                  <h3>
-                     <strong>Kuliah</strong>
-                  </h3>
-                  <img
-                     className="rounded-2 img-fluid"
-                     src="./kampus.jfif"
-                     alt="kampus"
-                     style={{ aspectRatio: "16/9", objectFit: "cover" }}
-                  />
-                  <span className="mt-2">
-                     Jurusan teknik informatika di Universitas Nahdlatul Ulama
-                     Sulawesi Tenggara (2013 - sekarang).
-                  </span>
+               <div className="accordion">
+                  <div className="accordion-item">
+                     <h3 className="accordion-header">
+                        <button
+                           className="accordion-button"
+                           data-bs-toggle="collapse"
+                           data-bs-target="#item-kuliah"
+                           aria-expanded="true"
+                        >
+                           <strong>Kuliah</strong>
+                        </button>
+                     </h3>
+                     <div
+                        id="item-kuliah"
+                        className="accordion-collapse collapse show"
+                     >
+                        <div className="accordion-body">
+                           <img
+                              className="rounded-2 img-fluid"
+                              src="./kampus.jfif"
+                              alt="kampus"
+                              style={{
+                                 aspectRatio: "16/9",
+                                 objectFit: "cover",
+                              }}
+                           />
+                           <div className="mt-2">
+                              Jurusan teknik informatika di Universitas
+                              Nahdlatul Ulama Sulawesi Tenggara (2013 -
+                              sekarang).
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
-               <div className="card border p-2 px-3 rounded">
-                  <h3>
-                     <strong>Sekolah Dasar (SD)</strong>
-                  </h3>
-                  Pernah bersekolah di SDN 01 LAEYA pada tahun 2012 - 2017
+
+               <div className="accordion">
+                  <div className="accordion-item">
+                     <h3 className="accordion-header">
+                        <button
+                           className="accordion-button"
+                           data-bs-toggle="collapse"
+                           data-bs-target="#item-sd"
+                           aria-expanded="true"
+                        >
+                           <strong>Sekolah Dasar (SD)</strong>
+                        </button>
+                     </h3>
+                     <div
+                        className="accordion-collapse collapse show"
+                        id="item-sd"
+                     >
+                        <div className="accordion-body">
+                           Pernah bersekolah di SDN 01 LAEYA pada tahun 2012 -
+                           2017
+                        </div>
+                     </div>
+                  </div>
                </div>
-               <div className="card border p-2 px-3 rounded">
-                  <h3>
-                     <strong>Sekolah Menengah Pertama (SMP)</strong>
-                  </h3>
-                  Pernah bersekolah di SMPN 02 KONSEL Periode 2017 - 2020
+
+               <div className="accordion">
+                  <div className="accordion-item">
+                     <h3 className="accordion-header">
+                        <button
+                           className="accordion-button"
+                           data-bs-toggle="collapse"
+                           data-bs-target="#item-smp"
+                           aria-expanded="true"
+                        >
+                           <strong>Sekolah Menengah Pertama (SMP)</strong>
+                        </button>
+                     </h3>
+                     <div
+                        className="accordion-collapse collapse show"
+                        id="item-smp"
+                     >
+                        <div className="accordion-body">
+                           Pernah bersekolah di SMPN 02 KONSEL Periode 2017 -
+                           2020
+                        </div>
+                     </div>
+                  </div>
                </div>
-               <div className="card border p-2 px-3 rounded">
-                  <h3>
-                     <strong>Sekolah Menengah Akhir (SMA)</strong>
-                  </h3>
-                  Pernah bersekolah di SMAN 17 KONSEL Periode 2020 - 2023
+
+               <div className="accordion">
+                  <div className="accordion-item">
+                     <h3 className="accordion-header">
+                        <button
+                           className="accordion-button"
+                           data-bs-toggle="collapse"
+                           data-bs-target="#item-sma"
+                           aria-expanded="false"
+                        >
+                           <strong>Sekolah Menengah Akhir (SMA)</strong>
+                        </button>
+                     </h3>
+                     <div className="accordion-collapse collapse" id="item-sma">
+                        <div className="accordion-body">
+                           Pernah bersekolah di SMAN 17 KONSEL Periode 2020 -
+                           2023
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
 
             <div className="">
-               <div style={{ height: "500px", position: "relative" }}>
+               <div style={{ height: "400px", position: "relative" }}>
                   <InfiniteScroll
                      items={[
                         { content: "Nama - Ahmad Bagas Adiputra" },
@@ -75,7 +146,7 @@ export default function Pendidikan() {
                      isTilted={true}
                      tiltDirection="left"
                      autoplay={true}
-                     autoplaySpeed={0.1}
+                     autoplaySpeed={0.2}
                      autoplayDirection="down"
                      pauseOnHover={true}
                   />
